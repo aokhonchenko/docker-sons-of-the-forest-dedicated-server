@@ -1,5 +1,7 @@
 name: docker-build-and-push-ci
 
+runs-on: self-hosted
+
 on:
   push:
     branches:
