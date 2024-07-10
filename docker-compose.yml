@@ -2,7 +2,7 @@ version: '3.9'
 services:
   sons-of-the-forest-dedicated-server:
     container_name: sons-of-the-forest-dedicated-server
-    image: jammsen/sons-of-the-forest-dedicated-server:latest
+    image: ohotnik/sotf-ds:latest
     restart: always
     environment:
       ALWAYS_UPDATE_ON_START: 1

@@ -1,12 +1,12 @@
 FROM jammsen/base:wine-stable-debian-bullseye
 
-LABEL org.opencontainers.image.authors="Sebastian Schmidt"
-LABEL org.opencontainers.image.source="https://github.com/jammsen/docker-sons-of-the-forest-dedicated-server"
+LABEL org.opencontainers.image.authors="Sebastian Schmidt, Aleksander Okhonchenko"
+LABEL org.opencontainers.image.source="https://github.com/aokhonchenko/docker-sons-of-the-forest-dedicated-server"
 
 ENV WINEPREFIX=/winedata/WINE64 \
     WINEARCH=win64 \
     DISPLAY=:1.0 \
-    TIMEZONE=Europe/Berlin \
+    TIMEZONE=Europe/Moscow \
     DEBIAN_FRONTEND=noninteractive \
     PUID=0 \
     PGID=0 \

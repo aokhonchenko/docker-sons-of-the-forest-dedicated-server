@@ -29,7 +29,9 @@ This includes a Sons of the Forest Dedicated Server based on Docker with Wine an
 Bash:
 
 ```console
-docker run --rm -i -t -p 8766:8766/udp -p 27016:27016/udp -p 9700:9700/udp -v $(pwd)/steamcmd:/steamcmd -v $(pwd)/game:/sonsoftheforest --name sons-of-the-forest-dedicated-server jammsen/sons-of-the-forest-dedicated-server:latest
+docker volume create steamcmd
+docker volume create sonsoftheforest
+docker run -i -t -p 8766:8766/udp -p 27016:27016/udp -p 9700:9700/udp -v steamcmd:/steamcmd -v sonsoftheforest:/sonsoftheforest --name sons-of-the-forest-dedicated-server --restart unless-stopped jammsen/sons-of-the-forest-dedicated-server:latest
 ```
 
 Docker-Compose:
