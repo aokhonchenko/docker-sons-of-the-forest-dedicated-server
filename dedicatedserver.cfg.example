@@ -9,7 +9,7 @@
   "LanOnly": false,
   "SaveSlot": 1,
   "SaveMode": "Continue",
-  "GameMode": "Normal",
+  "GameMode": "Custom",
   "SaveInterval": 600,
   "IdleDayCycleSpeed": 0.0,
   "IdleTargetFramerate": 5,
@@ -17,6 +17,35 @@
   "LogFilesEnabled": false,
   "TimestampLogFilenames": true,
   "TimestampLogEntries": true,
-  "GameSettings": {},
-  "CustomGameModeSettings": {}
+  "GameSettings": {
+      "Gameplay.TreeRegrowth": true,
+      "Structure.Damage": false
+    },
+  "CustomGameModeSettings": {
+      "GameSetting.Multiplayer.Cheats": true,
+      "GameSetting.Multiplayer.PvpDamage": "Normal",
+      "GameSetting.Vail.EnemySpawn": true,
+      "GameSetting.Vail.EnemyHealth": "Normal",
+      "GameSetting.Vail.EnemyDamage": "Normal",
+      "GameSetting.Vail.EnemyArmour": "Normal",
+      "GameSetting.Vail.EnemyAggression": "Normal",
+      "GameSetting.Vail.AnimalSpawnRate": "Normal",
+      "GameSetting.Vail.EnemySearchParties": "Normal",
+      "GameSetting.Environment.StartingSeason": "Summer",
+      "GameSetting.Environment.SeasonLength": "Default",
+      "GameSetting.Environment.DayLength": "Default",
+      "GameSetting.Environment.PrecipitationFrequency": "Default",
+      "GameSetting.Survival.ConsumableEffects": "Normal",
+      "GameSetting.Survival.PlayerStatsDamage": "Off",
+      "GameSetting.Survival.ColdPenalties": "Off",
+      "GameSetting.Survival.StatRegenerationPenalty": "Off",
+      "GameSetting.Survival.ReducedFoodInContainers": false,
+      "GameSetting.Survival.SingleUseContainers": true,
+      "GameSetting.Survival.BuildingResistance": "Normal",
+      "GameSetting.Survival.CreativeMode": false,
+      "GameSetting.Survival.PlayersImmortalMode": true,
+      "GameSetting.FreeForm.ForcePlaceFullLoad": false,
+      "GameSetting.Construction.NoCuttingsSpawn": false,
+      "GameSetting.Survival.OneHitToCutTrees": false
+    }
 }

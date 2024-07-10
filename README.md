@@ -31,7 +31,7 @@ Bash:
 ```console
 docker volume create steamcmd
 docker volume create sonsoftheforest
-docker run -i -t -p 8766:8766/udp -p 27016:27016/udp -p 9700:9700/udp -v steamcmd:/steamcmd -v sonsoftheforest:/sonsoftheforest --name sons-of-the-forest-dedicated-server --restart unless-stopped jammsen/sons-of-the-forest-dedicated-server:latest
+docker run -i -t -p 8766:8766/udp -p 27016:27016/udp -p 9700:9700/udp -v steamcmd:/steamcmd -v sonsoftheforest:/sonsoftheforest --name sons-of-the-forest-dedicated-server --restart unless-stopped ohotnik/sotf-ds:latest
 ```
 
 Docker-Compose:
@@ -41,7 +41,7 @@ version: '3.9'
 services:
   sons-of-the-forest-dedicated-server:
     container_name: sons-of-the-forest-dedicated-server
-    image: jammsen/sons-of-the-forest-dedicated-server:latest
+    image: ohotnik/sotf-ds:latest
     restart: always
     environment:
       ALWAYS_UPDATE_ON_START: 1
